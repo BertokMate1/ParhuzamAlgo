@@ -1,18 +1,13 @@
-1. pthread :
+## 1. pthread
 
-- Feladat leirása: Hatékonyan összeszorozni két nagyméretü mátrixot.
+- **Feladat leírása:** Két nagyméretű mátrix hatékony összeszorzása.
 
-- Mérési folyamat:
+- **Mérési folyamat:**
+    - Futásidő: A program futásidejét másodpercekben mérik.
+    - Problémaméret: A felhasználótól bekért mátrix mérete határozza meg a probléma méretét.
+    - Szálak száma: A program 1-től 10-ig méri a szálakon való futás idejét.
 
-Futásidő: A program futásidejét másodpercekben mérjük.
-
-Problémaméret: A felhasználótól bekért mátrix mérete meghatározza a probléma méretet.
-
-Szálak száma: A program 1-10 szálon való futás idejét nézi meg.
-
-Mérési pontok: A programban több futásidő mérés történik különböző szálak száma mellett, hogy lássuk a szálak számának hatását a futásidőre nézve.
-
-- Eredmények:
+- **Eredmények:**
 
 How big should the matrix be? : 1000
 Time taken with 1 threads: 5.373726 seconds
@@ -26,17 +21,16 @@ Time taken with 8 threads: 1.320308 seconds
 Time taken with 9 threads: 1.217560 seconds
 Time taken with 10 threads: 1.142882 seconds
 
-2. OpenMp :
+## 2. OpenMP
 
-- Feladat leirása: A program egy példa függvény (jelen esetben a sinus) Taylor sorbafejtését számolja ki a megadott x és a pontok körül amelyek random számok. Ehhez több szálon végzi el a számítást OpenMP segítségével.
+- **Feladat leírása:** A program kiszámolja a sinus Taylor sorfejtését egy adott x körül, amely pontok véletlen számok. Az OpenMP segítségével többszálasan végzi el a számítást.
 
-- Mérési folyamat:
+- **Mérési folyamat:**
+    - Futásidő: 1-től 10-ig futtatja a Taylor sor kiszámítását, minden egyes számításhoz méri az eltelt időt.
+    - Problémaméret: A felhasználótól kérjük be, ami a Taylor sorban felhasznált tagok számát jelenti.
+    - Mérési pontok: Kiírja a futási időt mindegyik számítás mellett, megjelenítve, hogy milyen gyorsan hajtotta végre a programot az egyes szálak száma mellett.
 
-Futásidő: 1-től 10 szálig futtatja a Taylor sor kiszámítását, minden egyes számításhoz méri az eltelt időt.
-
-Problémaméret: A felhasználótól kérjük be, ami a Taylor sorban felhasznált tagok számát jelenti.
-
-Mérési pontok: Kiírja a futási időt mindegyik számítás mellett, megjelenítve, hogy milyen gyorsan hajtotta végre a programot az egyes szálak száma mellett.
+- **Eredmények:**
 
 Please enter the problem size (number of terms in the Taylor series): 100 000 000
 Time taken with 1 thread(s): 6.243113 seconds
@@ -50,17 +44,15 @@ Time taken with 8 thread(s): 1.304944 seconds
 Time taken with 9 thread(s): 1.294432 seconds
 Time taken with 10 thread(s): 1.275210 seconds
 
-3. Java ForkJoinPool
+## 3. Java ForkJoinPool
 
-- Feladat leirása: A program célja a Merge Sort algoritmus párhuzamos megvalósításának bemutatása Java-ban a Fork/Join keretrendszer segítségével. Egy tömb egész számok párhuzamos rendezését végzi el
+- **Feladat leírása:** A program bemutatja a Merge Sort algoritmus párhuzamos megvalósítását Java nyelven a Fork/Join keretrendszer segítségével. Egy egész számok tömbjét párhuzamosan rendezzük.
 
-- Mérési folyamat:
+- **Mérési folyamat:**
+    - Futásidő: Kiírja a futási időt a megadott probléma méretre és szál/ak számára.
+    - Problémaméret: A felhasználótól kérjük be, ekkora lesz a tömb amiben dolgozunk.
 
-Futásidő: Kiírja a futási időt a megadott probléma méretre és szál/ak-ra.
-
-Problémaméret: A felhasználótól kérjük be, ekkora lesz a tömb amiben dolgozunk.
-
-Mérési pontok:
+- **Eredmények:**
 
 Sorting the array with 1 thread(s): 17.566 seconds
 Sorting the array with 2 thread(s): 9.553 seconds
