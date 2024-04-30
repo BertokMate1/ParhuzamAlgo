@@ -9,7 +9,7 @@
 
 - **Eredmények:**
 
-How big should the matrix be? : 1000
+``How big should the matrix be? : 1000``
 Time taken with 1 threads: 5.373726 seconds
 Time taken with 2 threads: 3.291818 seconds
 Time taken with 3 threads: 2.451364 seconds
