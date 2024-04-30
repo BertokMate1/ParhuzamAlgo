@@ -54,7 +54,8 @@ Time taken with 10 thread(s): 1.275210 seconds
     - Szekvenciális Vs Párhuzamos: Az alul található eredmények alapján is látható hogy mennyivel gyorsabb a párhuzamos végrehajtás.
 
 - **Eredmények:**
-    -Array Size for all: 100 000 000
+- -Array Size for all: 100 000 000
+
 | Szálak száma | Futásidő (másodpercek) |
 |--------------|------------------------|
 | Sequential   | 16.924                 |
