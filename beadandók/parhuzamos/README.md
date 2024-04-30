@@ -49,11 +49,12 @@ Time taken with 10 thread(s): 1.275210 seconds
 - **Feladat leírása:** A program bemutatja a Merge Sort algoritmus párhuzamos megvalósítását Java nyelven a Fork/Join keretrendszer segítségével. Egy egész számok tömbjét párhuzamosan rendezzük.
 
 - **Mérési folyamat:**
-    - Futásidő: Kiírja a futási időt a megadott probléma méretre és szál/ak számára.
+    - Futásidő: Kiírja a futási időt a megadott probléma méretre és szál/ak számára, illetve szekvenciális végrehajtásra
     - Problémaméret: A felhasználótól kérjük be, ekkora lesz a tömb amiben dolgozunk.
+    - Szekvenciális Vs Párhuzamos: Az alul található eredmények alapján is látható hogy mennyivel gyorsabb a párhuzamos végrehajtás.
 
 - **Eredmények:**
-
+    -Array Size for all: 100 000 000
 | Szálak száma | Futásidő (másodpercek) |
 |--------------|------------------------|
 | Sequential   | 16.924                 |
