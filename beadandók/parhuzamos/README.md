@@ -44,7 +44,7 @@ Time taken with 8 thread(s): 1.304944 seconds
 Time taken with 9 thread(s): 1.294432 seconds
 Time taken with 10 thread(s): 1.275210 seconds
 
-## 3. Java ForkJoinPool
+# 3. Java ForkJoinPool
 
 - **Feladat leírása:** A program bemutatja a Merge Sort algoritmus párhuzamos megvalósítását Java nyelven a Fork/Join keretrendszer segítségével. Egy egész számok tömbjét párhuzamosan rendezzük.
 
@@ -54,9 +54,11 @@ Time taken with 10 thread(s): 1.275210 seconds
 
 - **Eredmények:**
 
-Sorting the array with 1 thread(s): 17.566 seconds
-Sorting the array with 2 thread(s): 9.553 seconds
-Sorting the array with 4 thread(s): 5.176 seconds
-Sorting the array with 8 thread(s): 2.892 seconds
-Sorting the array with 16 thread(s): 1.684 seconds
-Sorting the array with 32 thread(s): 0.961 seconds
+| Szálak száma | Futásidő (másodpercek) |
+|--------------|------------------------|
+| Sequential   | 16.924                 |
+| 2            | 9.553                  |
+| 4            | 5.176                  |
+| 8            | 2.892                  |
+| 16           | 1.684                  |
+| 32           | 0.961                  |
