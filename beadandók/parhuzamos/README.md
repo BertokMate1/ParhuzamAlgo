@@ -46,17 +46,17 @@ Time taken with 10 thread(s): 1.275210 seconds
 
 # 3. Java ForkJoinPool
 
-- **Feladat leírása:** A program bemutatja a Merge Sort algoritmus párhuzamos megvalósítását Java nyelven a Fork/Join keretrendszer segítségével. Egy egész számok tömbjét párhuzamosan rendezzük.
+- **Task Description:** The program demonstrates the parallel implementation of the Merge Sort algorithm in Java using the Fork/Join framework. We sort an array of integers in parallel.
 
-- **Mérési folyamat:**
-    - Futásidő: Kiírja a futási időt a megadott probléma méretre és szál/ak számára, illetve szekvenciális végrehajtásra
-    - Problémaméret: A felhasználótól kérjük be, ekkora lesz a tömb amiben dolgozunk.
-    - Szekvenciális Vs Párhuzamos: Az alul található eredmények alapján is látható hogy mennyivel gyorsabb a párhuzamos végrehajtás.
+- **Measurement Process:**
+    - Runtime: Outputs the runtime for the given problem size and number of threads, as well as for sequential execution.
+    - Problem Size: The user dictates it, this will determine the size of the array to work with.
+    - Sequential Vs Parallel: Results below will demonstrate the speedup achieved by parallel execution.
 
-- **Eredmények:**
+- **Results:**
 - -Array Size for all: 100 000 000
 
-| Szálak száma | Futásidő (másodpercek) |
+| Number of Threads | Runtime (seconds) |
 |--------------|------------------------|
 | Sequential   | 16.924                 |
 | 2            | 9.553                  |
