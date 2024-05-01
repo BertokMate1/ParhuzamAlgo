@@ -1,25 +1,27 @@
 ## 1. pthread
 
-- **Feladat leírása:** Két nagyméretű mátrix hatékony összeszorzása.
+- **Task description:** Efficient multiplication of two large matrix.
 
-- **Mérési folyamat:**
-    - Futásidő: A program futásidejét másodpercekben mérik.
-    - Problémaméret: A felhasználótól bekért mátrix mérete határozza meg a probléma méretét.
-    - Szálak száma: A program 1-től 10-ig méri a szálakon való futás idejét.
+- **Measurement process:**
+    - Runtime: The program's runtime is measured in seconds.
+    - Problem size: The size of the matrix entered by the user determines the problem size.
+    - Number of threads: The program measures the runtime with 1 to 10 threads.
 
-- **Eredmények:**
+- **Results:**
+    - Matrix size : 1000
 
-How big should the matrix be? : 1000
-Time taken with 1 threads: 5.373726 seconds
-Time taken with 2 threads: 3.291818 seconds
-Time taken with 3 threads: 2.451364 seconds
-Time taken with 4 threads: 2.088667 seconds
-Time taken with 5 threads: 1.822057 seconds
-Time taken with 6 threads: 1.611161 seconds
-Time taken with 7 threads: 1.461408 seconds
-Time taken with 8 threads: 1.320308 seconds
-Time taken with 9 threads: 1.217560 seconds
-Time taken with 10 threads: 1.142882 seconds
+| Number of Threads | Time (seconds) |
+|-------------------|----------------|
+| 1                 | 7.273726       |
+| 2                 | 3.691818       |
+| 3                 | 2.451364       |
+| 4                 | 2.088667       |
+| 5                 | 1.822057       |
+| 6                 | 1.611161       |
+| 7                 | 1.461408       |
+| 8                 | 1.320308       |
+| 9                 | 1.217560       |
+| 10                | 1.142882       |
 
 ## 2. OpenMP
 
