@@ -23,26 +23,28 @@ Time taken with 10 threads: 1.142882 seconds
 
 ## 2. OpenMP
 
-- **Feladat leírása:** A program kiszámolja a sinus Taylor sorfejtését egy adott x körül, amely pontok véletlen számok. Az OpenMP segítségével többszálasan végzi el a számítást.
+- **Task Description:** The program calculates the Taylor series approximation of sine around a given x, which are random points. It performs the calculation in parallel using OpenMP.
 
-- **Mérési folyamat:**
-    - Futásidő: 1-től 10-ig futtatja a Taylor sor kiszámítását, minden egyes számításhoz méri az eltelt időt.
-    - Problémaméret: A felhasználótól kérjük be, ami a Taylor sorban felhasznált tagok számát jelenti.
-    - Mérési pontok: Kiírja a futási időt mindegyik számítás mellett, megjelenítve, hogy milyen gyorsan hajtotta végre a programot az egyes szálak száma mellett.
+- **Measurement Process:**
+    - Runtime: It runs the calculation of the Taylor series from 1 to 10 thread(s), measuring the elapsed time for each calculation.
+    - Problem Size: It prompts the user to input the number of terms used in the Taylor series.
+    - Measurement Points: It outputs the runtime for each calculation, showing how fast the program executed alongside the number of threads.
 
-- **Eredmények:**
+- **Results:**
+    - Problem size (number of terms in the Taylor series): 35 000
 
-Please enter the problem size (number of terms in the Taylor series): 100 000 000
-Time taken with 1 thread(s): 6.243113 seconds
-Time taken with 2 thread(s): 3.518711 seconds
-Time taken with 3 thread(s): 2.374051 seconds
-Time taken with 4 thread(s): 1.939701 seconds
-Time taken with 5 thread(s): 1.589735 seconds
-Time taken with 6 thread(s): 1.456865 seconds
-Time taken with 7 thread(s): 1.371542 seconds
-Time taken with 8 thread(s): 1.304944 seconds
-Time taken with 9 thread(s): 1.294432 seconds
-Time taken with 10 thread(s): 1.275210 seconds
+| Number of threads | Taylor series approximation | math.h sin | difference | time (seconds) |
+|-------------------|-----------------------------|------------|------------|----------------|
+| 1                 | 0.371446                    | -0.733270  | 1.104716   | 6.247          |
+| 2                 | 0.371446                    | -0.733270  | 1.104716   | 3.518711       |
+| 3                 | 0.371446                    | -0.733270  | 1.104716   | 2.374051       |
+| 4                 | 0.371446                    | -0.733270  | 1.104716   | 1.939701       |
+| 5                 | 0.371446                    | -0.733270  | 1.104716   | 1.589735       |
+| 6                 | 0.371446                    | -0.733270  | 1.104716   | 1.456865       |
+| 7                 | 0.371446                    | -0.733270  | 1.104716   | 1.371542       |
+| 8                 | 0.371446                    | -0.733270  | 1.104716   | 1.304944       |
+| 9                 | 0.371446                    | -0.733270  | 1.104716   | 1.294432       |
+| 10                | 0.371446                    | -0.733270  | 1.104716   | 1.275210       |
 
 # 3. Java ForkJoinPool
 
