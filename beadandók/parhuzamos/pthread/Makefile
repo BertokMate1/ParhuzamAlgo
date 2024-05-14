@@ -1,5 +1,5 @@
 build:
-	gcc -pthread -o main main.c
+	gcc -pthread -o main src/main.c
 run:
 	./main
 example:
