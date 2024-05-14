@@ -43,6 +43,7 @@ public class Main {
 
         // Print the sorted array
         System.out.println("Sorted array: " + Arrays.toString(array));
+        System.out.println("Is it sorted tho?: "+isSorted(array));
     }
 
     // Sequential MergeSort implementation
@@ -76,5 +77,15 @@ public class Main {
         while (j < right.length) {
             array[k++] = right[j++];
         }
+    }
+
+        // Array sort verify
+    private static boolean isSorted(int[] array) {
+        for (int i = 1; i < array.length; i++) {
+            if (array[i - 1] > array[i]) {
+                return false;
+            }
+        }
+        return true;
     }
 }
